@@ -12,6 +12,8 @@ Este repositorio contiene diferentes ejemplos de TypeScript organizados por tema
 |---------|-------------|-----------|
 | `reverse.ts` | Función que invierte las letras de cada palabra | Strings, Arrays, Spread Operator |
 | `ejemplo-tipos.ts` | Tipos básicos de TypeScript | Types, Interfaces, Optional Properties |
+| `countSheep.ts` | Contador de ovejas basado en letras disponibles | Loops, Switch, Math.min, String manipulation |
+
 
 ## 🛠️ Configuración del Entorno
 
@@ -46,6 +48,7 @@ tsx archivo.ts
 # Ejemplo:
 tsx reverse.ts
 tsx ejemplo-tipos.ts
+tsx countSheep.ts
 ```
 
 ### Opción 2: Con npm scripts
@@ -85,6 +88,19 @@ function translatePossessed(message: string): string {
 - Interfaces
 - Propiedades opcionales
 - Funciones con tipos
+
+### 🐑 Contador de Ovejas (`countSheep.ts`)
+Función que cuenta cuántas ovejas se pueden formar con las letras disponibles:
+```typescript
+function countSheep(letters: string): number {
+  if (letters.length === 0 || letters.length < 5) return 0;
+  // Cuenta ocurrencias de cada letra necesaria para "sheep"
+  // Retorna el mínimo número de ovejas posibles
+}
+```
+- **Input:** `"ssshhheeeeeepppp"`
+- **Output:** `3` (se pueden formar 3 palabras "sheep")
+- **Conceptos:** Switch statements, Math.min, conteo de caracteres
 
 ## 🔧 Configuración TypeScript
 
