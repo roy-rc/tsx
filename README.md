@@ -15,6 +15,7 @@ Este repositorio contiene diferentes ejemplos de TypeScript organizados por tema
 | `countSheep.ts` | Contador de ovejas basado en letras disponibles | Loops, Switch, Math.min, String manipulation |
 | `findSafestPath.ts` | Encuentra el camino más seguro en una matriz | Dynamic Programming, 2D Arrays, Math.min |
 | `viernes13.ts` | Encuentra todos los viernes 13 en un año dado | Date objects, Arrays, Loops, ISO strings |
+| `searchPhone.ts` | Búsqueda binaria en array de números de teléfono | Binary Search, Algorithm Optimization, Input Validation |
 
 
 ## 🛠️ Configuración del Entorno
@@ -53,6 +54,7 @@ tsx ejemplo-tipos.ts
 tsx countSheep.ts
 tsx findSafestPath.ts
 tsx viernes13.ts
+tsx searchPhone.ts
 ```
 
 ### Opción 2: Con npm scripts
@@ -129,6 +131,19 @@ function myersCalendar(year: number): string[] {
 - **Input:** `2025`
 - **Output:** `['2025-06-13', '2025-10-31']` (viernes 13 + Halloween especial)
 - **Conceptos:** Date objects, validación de tipos, formateo ISO, loops
+
+### 📞 Búsqueda de Teléfonos (`searchPhone.ts`)
+Implementación de búsqueda binaria para encontrar números de teléfono en un array ordenado:
+```typescript
+function searchPhone(phones: number[], target: number): number {
+  // Implementa búsqueda binaria con validación de entrada
+  // Optimizado para evitar overflow con arrays grandes
+}
+```
+- **Input:** `[1001, 1002, 1005, 1008, 1010, 1015, 1020]`, target: `1020`
+- **Output:** `6` (índice del teléfono encontrado)
+- **Complejidad:** O(log n) - muy eficiente para arrays grandes
+- **Conceptos:** Binary search, validación de entrada, prevención de overflow
 
 ## 🔧 Configuración TypeScript
 
