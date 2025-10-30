@@ -16,6 +16,7 @@ Este repositorio contiene diferentes ejemplos de TypeScript organizados por tema
 | `findSafestPath.ts` | Encuentra el camino más seguro en una matriz | Dynamic Programming, 2D Arrays, Math.min |
 | `viernes13.ts` | Encuentra todos los viernes 13 en un año dado | Date objects, Arrays, Loops, ISO strings |
 | `searchPhone.ts` | Búsqueda binaria en array de números de teléfono | Binary Search, Algorithm Optimization, Input Validation |
+| `changeLock.ts` | Calcula movimientos mínimos para cambiar candado | Algorithm Logic, String Manipulation, Math Optimization |
 
 
 ## 🛠️ Configuración del Entorno
@@ -55,6 +56,7 @@ tsx countSheep.ts
 tsx findSafestPath.ts
 tsx viernes13.ts
 tsx searchPhone.ts
+tsx changeLock.ts
 ```
 
 ### Opción 2: Con npm scripts
@@ -144,6 +146,19 @@ function searchPhone(phones: number[], target: number): number {
 - **Output:** `6` (índice del teléfono encontrado)
 - **Complejidad:** O(log n) - muy eficiente para arrays grandes
 - **Conceptos:** Binary search, validación de entrada, prevención de overflow
+
+### 🔐 Cambio de Candado (`changeLock.ts`)
+Algoritmo que calcula el mínimo número de movimientos para cambiar un candado de 4 dígitos:
+```typescript
+function changeLock(current: string, target: string): number {
+  // Calcula la ruta más corta para cada dígito (circular 0-9)
+  // Considera movimiento hacia adelante y hacia atrás
+}
+```
+- **Input:** `'0000'`, target: `'9999'`
+- **Output:** `4` (cada dígito 0→9 requiere 1 movimiento hacia atrás)
+- **Lógica:** Para cada dígito, elige la ruta más corta (hacia adelante o atrás en círculo)
+- **Conceptos:** Aritmética modular, optimización de rutas, validación con regex
 
 ## 🔧 Configuración TypeScript
 
