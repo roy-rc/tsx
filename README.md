@@ -13,6 +13,7 @@ Este repositorio contiene diferentes ejemplos de TypeScript organizados por tema
 | `reverse.ts` | Función que invierte las letras de cada palabra | Strings, Arrays, Spread Operator |
 | `ejemplo-tipos.ts` | Tipos básicos de TypeScript | Types, Interfaces, Optional Properties |
 | `countSheep.ts` | Contador de ovejas basado en letras disponibles | Loops, Switch, Math.min, String manipulation |
+| `findSafestPath.ts` | Encuentra el camino más seguro en una matriz | Dynamic Programming, 2D Arrays, Math.min |
 
 
 ## 🛠️ Configuración del Entorno
@@ -49,6 +50,7 @@ tsx archivo.ts
 tsx reverse.ts
 tsx ejemplo-tipos.ts
 tsx countSheep.ts
+tsx findSafestPath.ts
 ```
 
 ### Opción 2: Con npm scripts
@@ -101,6 +103,18 @@ function countSheep(letters: string): number {
 - **Input:** `"ssshhheeeeeepppp"`
 - **Output:** `3` (se pueden formar 3 palabras "sheep")
 - **Conceptos:** Switch statements, Math.min, conteo de caracteres
+
+### 🛣️ Camino Más Seguro (`findSafestPath.ts`)
+Algoritmo de programación dinámica para encontrar el camino con menor riesgo en una matriz:
+```typescript
+function findSafestPath(dream: number[][]): number {
+  // Usa programación dinámica para encontrar el camino mínimo
+  // desde esquina superior izquierda hasta inferior derecha
+}
+```
+- **Input:** `[[1,3,1],[1,5,1],[4,2,1]]`
+- **Output:** `7` (camino: 1→3→1→1→1)
+- **Conceptos:** Programación dinámica, matrices 2D, optimización de rutas
 
 ## 🔧 Configuración TypeScript
 
