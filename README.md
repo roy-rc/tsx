@@ -14,6 +14,7 @@ Este repositorio contiene diferentes ejemplos de TypeScript organizados por tema
 | `ejemplo-tipos.ts` | Tipos básicos de TypeScript | Types, Interfaces, Optional Properties |
 | `countSheep.ts` | Contador de ovejas basado en letras disponibles | Loops, Switch, Math.min, String manipulation |
 | `findSafestPath.ts` | Encuentra el camino más seguro en una matriz | Dynamic Programming, 2D Arrays, Math.min |
+| `viernes13.ts` | Encuentra todos los viernes 13 en un año dado | Date objects, Arrays, Loops, ISO strings |
 
 
 ## 🛠️ Configuración del Entorno
@@ -51,6 +52,7 @@ tsx reverse.ts
 tsx ejemplo-tipos.ts
 tsx countSheep.ts
 tsx findSafestPath.ts
+tsx viernes13.ts
 ```
 
 ### Opción 2: Con npm scripts
@@ -115,6 +117,18 @@ function findSafestPath(dream: number[][]): number {
 - **Input:** `[[1,3,1],[1,5,1],[4,2,1]]`
 - **Output:** `7` (camino: 1→3→1→1→1)
 - **Conceptos:** Programación dinámica, matrices 2D, optimización de rutas
+
+### 📅 Viernes 13 (`viernes13.ts`)
+Función que encuentra todos los viernes 13 en un año específico:
+```typescript
+function myersCalendar(year: number): string[] {
+  // Valida el año y busca todos los días 13 que caen en viernes
+  // Retorna las fechas en formato ISO (YYYY-MM-DD)
+}
+```
+- **Input:** `2025`
+- **Output:** `['2025-06-13', '2025-10-31']` (viernes 13 + Halloween especial)
+- **Conceptos:** Date objects, validación de tipos, formateo ISO, loops
 
 ## 🔧 Configuración TypeScript
 
