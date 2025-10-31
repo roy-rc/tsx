@@ -4,6 +4,7 @@ function countSheep(letters: string): number {
 
     // Contar letras necesarias
     const counts = { s: 0, h: 0, e: 0, p: 0 };
+    console.log("Initial counts:", counts);
 
     // Contar ocurrencias de cada letra
     for (const char of letters) {

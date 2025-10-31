@@ -17,6 +17,7 @@ Este repositorio contiene diferentes ejemplos de TypeScript organizados por tema
 | `viernes13.ts` | Encuentra todos los viernes 13 en un año dado | Date objects, Arrays, Loops, ISO strings |
 | `searchPhone.ts` | Búsqueda binaria en array de números de teléfono | Binary Search, Algorithm Optimization, Input Validation |
 | `changeLock.ts` | Calcula movimientos mínimos para cambiar candado | Algorithm Logic, String Manipulation, Math Optimization |
+| `surviveRoulette.ts` | Problema de Josephus - encuentra el superviviente | Josephus Problem, Modular Arithmetic, Array Manipulation |
 
 
 ## 🛠️ Configuración del Entorno
@@ -57,6 +58,7 @@ tsx findSafestPath.ts
 tsx viernes13.ts
 tsx searchPhone.ts
 tsx changeLock.ts
+tsx surviveRoulette.ts
 ```
 
 ### Opción 2: Con npm scripts
@@ -159,6 +161,19 @@ function changeLock(current: string, target: string): number {
 - **Output:** `4` (cada dígito 0→9 requiere 1 movimiento hacia atrás)
 - **Lógica:** Para cada dígito, elige la ruta más corta (hacia adelante o atrás en círculo)
 - **Conceptos:** Aritmética modular, optimización de rutas, validación con regex
+
+### 🎯 Superviviente de Ruleta (`surviveRoulette.ts`)
+Implementación del clásico Problema de Josephus para encontrar al último superviviente:
+```typescript
+function surviveRoulette(n: number, k: number): number {
+  // n personas en círculo, eliminamos cada k-ésima persona
+  // Usa aritmética modular para simular el movimiento circular
+}
+```
+- **Input:** `n=5` (5 personas), `k=3` (eliminar cada 3ª)
+- **Output:** `3` (posición del superviviente, 0-indexed)
+- **Algoritmo:** Simula eliminaciones secuenciales con array dinámico
+- **Conceptos:** Problema de Josephus, operador módulo (%), manipulación de arrays
 
 ## 🔧 Configuración TypeScript
 
